@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Twitter Clone</title>
+    <link rel="stylesheet" href="twitter.css">
+</head>
+<body>
+    <header>
+        <!-- Twitter Logo -->
+        <img src="logo.png" alt="Twitter Logo">
+    </header>
+
+    <main>
+        <!-- Tweet Form -->
+        <div class="tweet-container">
+            <form id="tweet-form">
+                <h2>Create a Tweet</h2>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="tweet-content">Tweet</label>
+                <textarea id="tweet-content" name="tweet-content" required></textarea>
+                <button type="submit">Tweet</button>
+            </form>
+        </div>
+
+        <!-- Newsfeed -->
+        <div class="newsfeed" id="newsfeed">
+            <!-- Tweets will be dynamically added here -->
+        </div>
+    </main>
+
+    <script src="twitter.js"></script> <!-- Link your JavaScript file here -->
+</body>
+</html>
